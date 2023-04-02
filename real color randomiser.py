@@ -1,0 +1,17 @@
+from tkinter import*
+root = Tk()
+root.title("color randommiser")
+root.geometry("500x300")
+label_score = Label(root, text= "Score :" )
+label_score.place(relx=0.0 , rely=0.0)
+label_color = Label(root, text="" , font=("Arial",25))
+label_color.place(relx=0.5 , rely=0.19, anchor=CENTER)
+color_name = Entry(root, text="")
+color_name.insert(0, "Enter color name here")
+color_name.place(relx=0.5,rely=0.60, anchor=CENTER)
+check_btn = Button(root , text="CHECK", bg="red")
+check_btn.place(relx=0.4,rely=0.75, anchor=CENTER)
+start_btn = Button(root , text="START", bg="green")
+start_btn.place(relx=0.6,rely=0.75, anchor=CENTER)
+
+root.mainloop()
